@@ -1,18 +1,15 @@
 <?php
-$servename = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
-$databasename = "cafebistro_phpoo_turmaA";
-
+$databasename = "cafebistro_lp2d3";
 
 //criação da conexão
-$conn = new mysqli($servename, $username, $password, $databasename);
+$conn = new mysqli($servername, $username, $password, $databasename);
 
 // verificando a conexão
 if (!$conn){
-    die("conexão falhou".mysqli_connect_error());
-}
-else{
-    echo "conectou";
-}
+    //die("conexão falhou".mysqli_connect_error());
+    echo "não foi possível conectar ao banco de dados";
+};
 ?>
